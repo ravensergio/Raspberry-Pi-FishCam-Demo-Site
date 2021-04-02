@@ -51,7 +51,7 @@
         }
         else {
             // auto play if there is no stop button
-            setTimeout(startPlay(), 5000);
+            setTimeout(startPlay(), 3000);
         }
 
         var stop = document.getElementById('stop');
