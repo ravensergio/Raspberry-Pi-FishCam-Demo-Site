@@ -1,7 +1,7 @@
 (function () {
 
     var signalObj = null;
-
+    
     function startPlay() {
         if (signalObj)
             return;
@@ -51,7 +51,7 @@
         }
         else {
             // auto play if there is no stop button
-            startPlay();
+            setTimeout(startPlay(), 2000);
         }
 
         var stop = document.getElementById('stop');
