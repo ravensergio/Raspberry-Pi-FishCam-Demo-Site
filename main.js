@@ -51,7 +51,7 @@
         }
         else {
             // auto play if there is no stop button with Delay 3000 ms imp! do not lower
-            setTimeout(startPlay(), 3500);
+            setTimeout(startPlay(), 4000);
         }
 
         var stop = document.getElementById('stop');
