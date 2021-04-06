@@ -50,8 +50,8 @@
             }, false);
         }
         else {
-            // auto play if there is no stop button with Delay 1000 ms
-            setTimeout(startPlay(), 1000);
+            // auto play if there is no stop button with Delay 3000 ms imp! do not lower
+            setTimeout(startPlay(), 3500);
         }
 
         var stop = document.getElementById('stop');
