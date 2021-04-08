@@ -54,7 +54,8 @@
 	<script src='adapter.js'></script>
         <script src='signalling.js'></script>
         <script src='main.js'></script>
-	<script> window.alert = function() {}; </script>
+	/*<script> window.alert = function() {}; </script>*/
+	<script> window.alert = function ( text ) { console.log( 'Admin: ' + text ); return true; };</script>
     </head>
     <body>
         <!-- <div>
