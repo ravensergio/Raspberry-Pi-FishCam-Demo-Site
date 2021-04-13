@@ -97,8 +97,8 @@ function signal(url, onStream, onError, onClose, onMessage) {
                     // If forced, the hardware codec depends on the arch.
                     // (e.g. it's H264 on the Raspberry Pi)
                     // Make sure the browser supports the codec too.
-                    force_hw_vcodec: document.getElementById("remote_hw_vcodec").checked,
-                    vformat: 30, /* 30=640x480, 30 fps. 60=1280x720, 30 fps. */
+                    //force_hw_vcodec: document.getElementById("remote_hw_vcodec").checked,
+                    //vformat: 30, /* 30=640x480, 30 fps. 60=1280x720, 30 fps. */
                     trickle_ice: true
                 }
             };
