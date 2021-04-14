@@ -47,8 +47,8 @@
         //mine delay
         const delay = ms => new Promise(res => setTimeout(res, ms));
         const WaitForStart = async () => {
-              await delay(5000);
-              console.log("Waited 5s");
+              await delay(500);
+              console.log("Waited 500ms");
                  startPlay();
             };
         //end delay
