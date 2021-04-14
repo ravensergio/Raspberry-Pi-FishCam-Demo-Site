@@ -44,15 +44,23 @@
     window.addEventListener('DOMContentLoaded', function () {
 
         var start = document.getElementById('start');
+        //mine delay
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        const WaitForStart = async () => {
+              await delay(5000);
+              console.log("Waited 5s");
+                 startPlay();
+            };
+        //end delay
         if (start) {
             start.addEventListener('click', function (e) {
-                startPlay();
+                WaitForStart();
             }, false);
         }
         else {
             // auto play if there is no stop button with Delay 3000 ms imp! do not lower
-            setTimeout(startPlay(){ alert("After 5 seconds!"); }, 5000);
-    
+        
+             setTimeout(startPlay(), 4000);
         }
 
         var stop = document.getElementById('stop');
