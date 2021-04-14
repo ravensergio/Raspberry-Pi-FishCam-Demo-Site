@@ -54,13 +54,13 @@
         //end delay
         if (start) {
             start.addEventListener('click', function (e) {
-                WaitForStart();
+                startPlay();
             }, false);
         }
         else {
             // auto play if there is no stop button with Delay 3000 ms imp! do not lower
         
-             setTimeout(startPlay(), 4000);
+            WaitForStart();
         }
 
         var stop = document.getElementById('stop');
